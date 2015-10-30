@@ -19,12 +19,20 @@
 }
 
 {{else}}
-{{{prefix items ""}}} {
+{{{../../baseIconClass}}} {
 	background-size: {{unit width ../../config/cssUnit ../../config/cssBaseFontSize}} {{unit height ../../config/cssUnit ../../config/cssBaseFontSize}};
 	background-repeat: no-repeat;
+	{{#if ../../spriteUrl}}
+	background-image: url("{{../../../spriteUrl}}/{{pngName}}");
+	{{else}}
 	background-image: url("{{url pngPath ../../cssPath}}");
+	{{/if}}
 	{{#unless ../../config/cssSvgPrefix}}
-	background-image: url("{{url ../../../svgPath ../../../cssPath}}"), none;
+	{{#if ../spriteUrl}}
+	background-image: url("{{../spriteUrl}}/{{../spriteName}}");
+	{{else}}
+	background-image: url("{{url ../svgPath ../cssPath}}"), none;
+	{{/if}}
 	{{/unless}}
 }
 
@@ -51,13 +59,21 @@
 {{/breakpoints}}
 {{/sizes}}
 {{#if config/cssPngPrefix}}
-{{{prefixAll ../sizes ../config/cssSvgPrefix}}} {
+.svg {{{../../baseIconClass}}} {
+	{{#if ../../spriteUrl}}
+	background-image: url("{{../../spriteUrl}}/{{../../spriteName}}");
+	{{else}}
 	background-image: url("{{url ../svgPath ../cssPath}}");
+	{{/if}}
 }
 {{else}}
 {{#if config/cssSvgPrefix}}
-{{{prefixAll ../../sizes ../config/cssSvgPrefix}}} {
+.svg {{{../../baseIconClass}}} {
+	{{#if ../../spriteUrl}}
+	background-image: url("{{../../spriteUrl}}/{{../../spriteName}}");
+	{{else}}
 	background-image: url("{{url ../svgPath ../cssPath}}");
+	{{/if}}
 }
 {{/if}}
 {{/if}}
