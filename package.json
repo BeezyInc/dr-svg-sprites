@@ -1,7 +1,7 @@
 {
   "name": "dr-svg-sprites-hiulit",
   "description": "Create SVG sprites with PNG fallbacks at needed sizes",
-  "version": "0.9.31",
+  "version": "0.9.32",
   "homepage": "",
   "author": {
     "name": "hiulit",
@@ -30,7 +30,7 @@
     "layout": "2.2.0",
     "lodash": "^3.1.0",
     "mkdirp": "^0.5.1",
-    "svg2png": "^1.1.1",
+    "svg2png": "^1.1.0",
     "svgo": "^0.4.5",
     "through2": "^2.0.0",
     "vinyl-fs": "^1.0.0"
