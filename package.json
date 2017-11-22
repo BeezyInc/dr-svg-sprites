@@ -1,18 +1,18 @@
 {
-  "name": "dr-svg-sprites-hiulit",
+  "name": "@beezyinc/dr-svg-sprites-bz",
   "description": "Create SVG sprites with PNG fallbacks at needed sizes",
-  "version": "0.9.32",
+  "version": "1.0.1",
   "homepage": "",
   "author": {
-    "name": "hiulit",
-    "email": "hiulit@gmail.com"
+    "name": "Beezy Inc",
+    "email": "tech@beezy.net"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/hiulit/dr-svg-sprites.git"
+    "url": "git://github.com/BeezyInc/dr-svg-sprites.git"
   },
   "bugs": {
-    "url": "https://github.com/hiulit/dr-svg-sprites/issues"
+    "url": "https://github.com/BeezyInc/dr-svg-sprites/issues"
   },
   "licenses": [
     {
@@ -30,10 +30,10 @@
     "layout": "2.2.0",
     "lodash": "^3.1.0",
     "mkdirp": "^0.5.1",
-    "svg2png": "1.1.0",
+    "svg2png": "^4.1.1",
     "svgo": "^0.4.5",
     "through2": "^2.0.0",
-    "vinyl-fs": "^1.0.0"
+    "vinyl-fs": "^2.4.4"
   },
   "keywords": [
     "svg",

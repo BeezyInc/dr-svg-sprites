@@ -419,6 +419,13 @@ svgAttributes: {
 
 ## Changelog
 
+### 1.0.1
+
+Changes:
+
+* svg2png dependency upgraded from 1.1.1 to 4.1.1
+
+
 ### 0.9.31
 
 Fixed:
